@@ -18,3 +18,5 @@ axum = { version = "0.8.3", default-features = false, features = [
     "tokio",
     "http1",
 ] }
+
+dotenvy = "0.15.7"
