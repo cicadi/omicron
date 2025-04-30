@@ -20,5 +20,6 @@ axum = { version = "0.8.3", default-features = false, features = [
     "tokio",
     "http1",
 ] }
+tower-layer = "0.3.3"
 
 dotenvy = "0.15.7"
