@@ -1,6 +1,26 @@
 [package]
 name = "omicron"
 version = "0.1.0"
-edition = "2024"
+
+edition.workspace = true
+rust-version.workspace = true
 
 [dependencies]
+thiserror = "2.0.12"
+
+tokio = { version = "1.44.2", features = [
+    "rt-multi-thread",
+    "macros",
+    "net",
+    "fs",
+] }
+
+axum = { version = "0.8.3", default-features = false, features = [
+    "macros",
+    "tokio",
+    "http1",
+] }
+tower-layer = "0.3.3"
+tower-http = { version = "0.6.2", features = ["normalize-path"] }
+
+dotenvy = "0.15.7"
