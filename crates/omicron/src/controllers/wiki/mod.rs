@@ -5,7 +5,7 @@ use axum::{
 
 use crate::error::Error;
 
-pub mod wiki;
+pub mod page;
 
 #[debug_handler]
 pub async fn root() -> Result<Response, Error> {
